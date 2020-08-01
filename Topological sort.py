@@ -1,7 +1,7 @@
 from sys import stdin, setrecursionlimit as srl
 from threading import stack_size, Thread
 
-srl(int(1e6)+7)
+srl(int(1e9)+7)
 stack_size(int(1e8))
 ip=stdin.readline
 
