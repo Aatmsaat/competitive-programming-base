@@ -18,11 +18,10 @@ def main():
 	stk=[]
 	for x in range(1, n+1):
 		def topsort(v):
-			if visited[v]==2: return
+			if visited[v]: return
 			visited[v]=1
 			for i in adj[v]:
 				topsort(i)
-			visited[v]=2
 			stk.append(v)
 		if not visited[x]: topsort(x)
 		
